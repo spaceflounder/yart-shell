@@ -1,0 +1,57 @@
+{
+    "$id": "https://example.com/story.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Game Info Data File",
+    "description": "Game info and options",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "Game title"
+      },
+      "author": {
+        "type": "string",
+        "description": "Game author"
+      },
+      "genre": {
+        "type": "string",
+        "description": "Story genre"
+      },
+      "import": {
+        "type": "string",
+        "description": "Import string for Google Fonts. Use fonts.google.com to select nice web safe fonts for your story."
+      },
+      "foreground": {
+        "type": "string",
+        "description": "The common foreground color. Used for the base screen font."
+      },
+      "background": {
+        "type": "string",
+        "description": "The common foreground color. Used for the base screen font."
+      },
+      "font": {
+        "type": "string",
+        "description": "The base screen font. Use a common web-safe font, or use with the import command to import a Google Font."
+      },
+      "header font": {
+        "type": "string",
+        "description": "The header display font. Use a common web-safe font, or use with the import command to import a Google Font."
+      },
+      "version": {
+        "type": "string",
+        "description": "Release version"
+      },
+      "first release": {
+        "type": "string",
+        "description": "First release"
+      },
+      "publication date": {
+        "type": "string",
+        "description": "Game publication date"
+      },
+      "start": {
+        "type": "string",
+        "description": "First page in the chapter"
+      }
+    }
+  }

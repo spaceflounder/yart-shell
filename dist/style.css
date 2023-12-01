@@ -1,0 +1,120 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+aside {
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+
+h1 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: x-large;
+}
+
+
+h3 {
+    font-size: larger;
+}
+
+
+h3 {
+    font-size: large;
+}
+
+
+hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+.iconSize {
+    font-size: 200%;
+}
+
+button {
+    width: 45vw;
+    height: 45vw;
+    max-width: 4.0em;
+    max-height: 4.0em;
+    margin: 0.12em;
+    color: rgba(255, 255, 255, 0.7);
+    border: 0;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    line-height: 0.99em;
+}
+
+
+#out-wrapper {
+    padding: 1em;
+    width: 98vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#out {
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 60ch;
+    min-height: 50vh;
+    padding-bottom: 1em;
+}
+
+#btns-wrapper {
+    width: 99vw;
+    max-height: 49vh;
+    min-height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
