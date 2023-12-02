@@ -1,0 +1,19 @@
+{
+    "$id": "https://example.com/story.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Achievements Info Data",
+    "description": "Game achievements setup",
+    "type": "object",
+    "additionalProperties" : {
+        "properties": {
+            "content": {
+                "type": "string",
+                "description": "Message to display on reaching achievement"
+            },
+            "score": {
+                "type": "number",
+                "description": "Points to add to total score"
+            }
+        }
+    }
+}

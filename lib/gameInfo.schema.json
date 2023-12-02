@@ -1,8 +1,8 @@
 {
     "$id": "https://example.com/story.schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Game Info Data File",
-    "description": "Game info and options",
+    "title": "Game Metadata Info",
+    "description": "Game info and customization",
     "type": "object",
     "properties": {
       "title": {

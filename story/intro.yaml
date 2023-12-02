@@ -20,9 +20,10 @@ buttons:
       - (blah)
     content: |
       Test {{ fish }} complete
-    change:
-      intro:
-        state: blergdom
+    award: meeting the fish
+
+  - label: Navigate
+    go: chapter1/inTheForest
 
 blergdom:
   buttons:
