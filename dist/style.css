@@ -63,8 +63,8 @@ hr {
 button {
     width: 45vw;
     height: 45vw;
-    max-width: 4.0em;
-    max-height: 4.0em;
+    max-width: 10em;
+    max-height: 10em;
     margin: 0.12em;
     color: rgba(255, 255, 255, 0.7);
     border: 0;
@@ -73,7 +73,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 150%;
+    font-size: 120%;
     line-height: 0.99em;
 }
 
@@ -112,8 +112,9 @@ button {
 }
 
 #btns {
+    width: 93vw;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
     flex-wrap: wrap;

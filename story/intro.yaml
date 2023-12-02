@@ -1,31 +1,12 @@
 
-blah: true
-
-fish -- shuffled list:
-  - zero
-  - one
-  - two
-  - three
 
 content: |
   This is a goldfish test.
 
 buttons:
-  - label: Test
-    content: Hello, world
-
-  - label: test 2
-    priority: 10
-    active:
-      - (blah)
+  - label: Learn More
+    icon: :icon[library_books]
     content: |
-      Test {{ fish }} complete
-    award: meeting the fish
+      Tap the link to read the docs on GitHub:
+      [Yart Documentation](https://github.com/spaceflounder/yart-shell/wiki)
 
-  - label: Navigate
-    go: chapter1/inTheForest
-
-blergdom:
-  buttons:
-    - label: Test
-      content: It works!
