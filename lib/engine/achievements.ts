@@ -1,6 +1,29 @@
 // deno-lint-ignore-file no-explicit-any
 
 
+interface AchievementInterface {
+
+    awarded?: boolean;
+    content?: string;
+    score?: number;
+
+}
+
+
+interface AchievementMetaDataInterface {
+
+    score?: number;
+    total?: number;
+
+}
+
+
+export type AchievementsType = AchievementMetaDataInterface & {
+
+    [key: string]: AchievementInterface;
+
+}
+
 
 
 export function initializeAchievements(story: any) {
@@ -23,15 +46,21 @@ export function initializeAchievements(story: any) {
 
 export function handleAward(award: string, story: any, appendAchievementText: (text: string) => void) {
 
-    if (!story['achievements'][award]['awarded']) {
-        story['achievements'][award]['awarded'] = true;
-        const score = story['achievements'][award]?.score ?? 0;
-        const content = story['achievements'][award]?.content ?? '';
-        story['achievements'].score += score;
-        if (content !== '') {
-            appendAchievementText(`:::aside\n${content}\n:::`);
-        }
-    }    
+    if (story.achievements) {
+        if (!story['achievements'][award]['awarded']) {
+            story['achievements'][award]['awarded'] = true;
+            const score = story['achievements'][award]?.score ?? 0;
+            const content = story['achievements'][award]?.content ?? '';
+            if (!story['achievements'].score) {
+                story['achievements'].score = score;
+            } else {
+                story['achievements'].score += score;
+            }
+            if (content !== '') {
+                appendAchievementText(`:::aside\n${content}\n:::`);
+            }
+        }        
+    }
 
 }
 

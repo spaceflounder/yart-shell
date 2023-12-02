@@ -57,7 +57,8 @@ async function scan(path: string, fileContent: string[], fileName: string[], set
     const fullpath = `${path}/${f.name}`;
     if (f.isFile) {
       if (getExt(fullpath) === 'yaml') {
-        const yaml = await Deno.readTextFile(fullpath);
+        let yaml = await Deno.readTextFile(fullpath);
+        yaml += `\n\nname: ${getSafeObjectName(path, f.name)}`;
         try {
           // deno-lint-ignore no-explicit-any
           const object: any = parse(yaml);

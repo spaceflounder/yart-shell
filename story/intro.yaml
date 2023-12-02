@@ -1,0 +1,21 @@
+
+blah: foobar
+
+fish -- shuffled list:
+  - zero
+  - one
+  - two
+  - three
+
+content: |
+  This is a goldfish test.
+
+buttons:
+  - label: Test
+    content: Hello, world
+
+  - label: test 2
+    active:
+      - (blah) is (foobar)
+    content: |
+      Test {{ fish }} complete
