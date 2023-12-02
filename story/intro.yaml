@@ -1,5 +1,5 @@
 
-blah: foobar
+blah: true
 
 fish -- shuffled list:
   - zero
@@ -15,7 +15,16 @@ buttons:
     content: Hello, world
 
   - label: test 2
+    priority: 10
     active:
-      - (blah) is (foobar)
+      - (blah)
     content: |
       Test {{ fish }} complete
+    change:
+      intro:
+        state: blergdom
+
+blergdom:
+  buttons:
+    - label: Test
+      content: It works!
