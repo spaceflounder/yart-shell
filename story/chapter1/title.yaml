@@ -1,0 +1,7 @@
+
+content: |
+  # This is the title
+
+buttons:
+  - label: hello world
+    content: Hello, back!

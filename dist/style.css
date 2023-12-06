@@ -13,6 +13,26 @@ html, body {
     height: 100vh;
 }
 
+/* unvisited link */
+a:link {
+    font-size: 125%;
+}
+  
+  /* visited link */
+  a:visited {
+    font-size: 125%;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    font-size: 125%;
+  }
+  
+  /* selected link */
+  a:active {
+    font-size: 125%;
+  }
+
 
 aside {
     margin: 1em;
@@ -56,9 +76,20 @@ hr {
 }
 
 
+.submit-box {
+    border: 0;
+    outline: none;
+    font-size: 125%;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px;
+}
+
+
 .iconSize {
     font-size: 200%;
 }
+
 
 button {
     width: 45vw;

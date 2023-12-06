@@ -10,3 +10,25 @@ buttons:
       Tap the link to read the docs on GitHub:
       [Yart Documentation](https://github.com/spaceflounder/yart-shell/wiki)
 
+  - label: booo
+    go: chapter1/title
+
+  - label: Entry test
+    content: |
+      Test Entry system
+    entry:
+      prompt: Hello, from prompt!
+
+      to: foobar
+      
+      tokens:
+
+        monk Eys:
+          content: |
+            Are bad.
+          go: chapter1/title
+
+      error:
+        content: |
+          I don't understand.
+
