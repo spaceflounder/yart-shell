@@ -1,7 +1,0 @@
-
-content: |
-  I'm in the castle.
-
-buttons:
-  - label: To the Forest
-    go: ./inTheForest

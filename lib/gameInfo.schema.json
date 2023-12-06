@@ -13,6 +13,14 @@
         "type": "string",
         "description": "Game author"
       },
+      "email": {
+        "type": "string",
+        "description": "Author contact email"
+      },
+      "headline": {
+        "type": "string",
+        "description": "Game headline, or unofficial subtitle"
+      },
       "genre": {
         "type": "string",
         "description": "Story genre"
@@ -52,6 +60,22 @@
       "start": {
         "type": "string",
         "description": "First page in the chapter"
+      },
+      "description": {
+        "type": "string",
+        "description": "Description of your game. This is somewhat analogous to reading the back of a book."
+      },
+      "series": {
+        "type": "string",
+        "description": "The series this game belongs to. Usually paired with a series number to designate which entry this game is. For example, Andromeda Apocalypse is in the Andromeda series."
+      },
+      "series number": {
+        "type": "string",
+        "description": "The entry number for this game in the series. For example, Andromeda Apocalypse is the second game in the Andromeda series."
+      },
+      "forgiveness": {
+        "enum": ["Merciful", "Polite", "Tough", "Nasty", "Cruel"],
+        "description": "How forgiving the story is, on the Zarfian scale. First letter uppercase is required."
       }
     }
   }

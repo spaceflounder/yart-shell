@@ -1,10 +1,8 @@
 
-title: No title yet - edit gameInfo.yaml
-author: No author yet - edit gameInfo.yaml
-email: 
-genre: 
-publication date: 
-release date: 
+title: $TITLE$
+author: $AUTHOR$
+email: $EMAIL$
+
 start: intro
 IFID: $IFID$
 
@@ -13,5 +11,6 @@ import: |
 
 header font: Cormorant, Times New Roman
 font: Montserrat, sans-serif
+
 
 debug: true

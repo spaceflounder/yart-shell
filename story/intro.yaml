@@ -1,7 +1,7 @@
 
 
 content: |
-  This is a goldfish test.
+  Edit **intro.yaml** in your favorite code editor to start working on your game!
 
 buttons:
   - label: Learn More
