@@ -1,5 +1,5 @@
 {
-    "$id": "https://example.com/story.schema.json",
+    "$id": "story.schema.json",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Story Page Data File",
     "description": "Story state and content",
@@ -8,6 +8,28 @@
       "content": {
         "type": "string",
         "description": "Content for this page"
+      },
+      "entry": {
+        "type": "object",
+        "description": "Keyboard-based player entry for this page",
+        "properties": {
+          "prompt": {
+            "type": "string",
+            "description": "Suggestion text for prompt"
+          },
+          "to": {
+            "type": "string",
+            "description": "Dump player input to this address in the gameInfo object"
+          },
+          "catch": {
+            "type": "object",
+            "description": "Directions to execute if no token matches"
+          },
+          "tokens": {
+            "type": "object",
+            "description": "Tokens (words or phrases) used to match player input"
+          }
+        }
       },
       "buttons": {
         "type": "array",

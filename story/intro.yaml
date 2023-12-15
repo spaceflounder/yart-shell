@@ -28,7 +28,7 @@ buttons:
             Are bad.
           go: chapter1/title
 
-      error:
+      catch:
         content: |
           I don't understand.
 
