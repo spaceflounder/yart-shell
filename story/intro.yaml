@@ -3,32 +3,11 @@
 content: |
   Edit **intro.yaml** in your favorite code editor to start working on your game!
 
-buttons:
-  - label: Learn More
-    icon: :icon[library_books]
+look:
+  - text: And *what* is intro.yaml?
     content: |
-      Tap the link to read the docs on GitHub:
-      [Yart Documentation](https://github.com/spaceflounder/yart-shell/wiki)
+      Intro dot yaml is the entry file.
 
-  - label: booo
-    go: chapter1/title
-
-  - label: Entry test
-    content: |
-      Test Entry system
-    entry:
-      prompt: Hello, from prompt!
-
-      to: foobar
-      
-      tokens:
-
-        monk Eys:
-          content: |
-            Are bad.
-          go: chapter1/title
-
-      catch:
-        content: |
-          I don't understand.
+check:
+  go: chapter1/title
 
