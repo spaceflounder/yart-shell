@@ -1,7 +1,12 @@
 
 
+blern: trees
+
 content: |
   Edit **intro.yaml** in your favorite code editor to start working on your game!
+
+content (intro.blerg) is (blah) and (intro.foobar): |
+  Test here
 
 look:
   - text: And *what* is intro.yaml?
@@ -10,4 +15,18 @@ look:
 
 check:
   go: chapter1/title
+
++ (intro.blern):
+  content: |
+    This is another test.
+
+  look:
+    - text: This is a test look
+      content: |
+        I'm not sure I follow you
+
+  use:
+    - text: Hold trees
+      active: (intro.pointy trees)
+      content: Toy not game
 
