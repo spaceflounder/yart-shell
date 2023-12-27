@@ -1,9 +1,12 @@
 
+foobar: test 2
 
 blern: trees
 
+lookdesc: Edit to work on {{intro.foobar}}!
+
 content: |
-  Edit **intro.yaml** in your favorite code editor to start working on your game!
+  {{intro.lookdesc}}
 
 content (intro.blerg) is (blah) and (intro.foobar): |
   Test here
@@ -18,12 +21,18 @@ check:
 
 + (intro.blern):
   content: |
-    This is another test.
+    This is another {{intro.foobar}}.
 
   look:
+    - text: Look
+      content: |
+        {{intro.content}}
     - text: This is a test look
       content: |
         I'm not sure I follow you
+      set:
+        intro:
+          foobar: test 3
 
   use:
     - text: Hold trees
